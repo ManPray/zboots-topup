@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "162110321715",
+    "project_id": "zboots-top-up",
+    "storage_bucket": "zboots-top-up.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162110321715:android:495e4e130efa8004c71f46",
+        "android_client_info": {
+          "package_name": "com.example.kelompok5_tugasbesar_pemogramanmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162110321715-3qvnlaf2j4mg8tc9nk2phcp8ligrn8in.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kelompok5_tugasbesar_pemogramanmobile",
+            "certificate_hash": "db254614e2a82346c55d2fdec9afa3afc43dab1a"
+          }
+        },
+        {
+          "client_id": "162110321715-ddij6geubt8nogj7pe3n8sijdumicnhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxyI4OC9cdXgZhvYlGIq-qSvxCtEG43L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162110321715-ddij6geubt8nogj7pe3n8sijdumicnhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

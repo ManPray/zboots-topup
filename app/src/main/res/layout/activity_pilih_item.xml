@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pilih_item"
+    tools:context=".PilihItem">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_callofdutymobile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/title_callofdutymobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Call of Duty: Mobile"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/caption_callofdutymobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.05"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Become a champion in Call of Duty: Mobile now! Top-up at ZBOOTS TOPUP and feel the difference. Get ready to dominate the arena and show that you are the best!"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <TextView
+        android:id="@+id/Top_up_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="20dp"
+        android:text="Top up Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <FrameLayout
+        android:id="@+id/banner_halaman_home"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:background="#00f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Top_up_menu"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/all_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item1"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart1"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item2"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart2"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item3"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart3"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item4"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart4"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item5"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy5"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart5"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item6"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy6"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart6"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/kolom_pilih_item">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/item7"
+                        android:paddingLeft="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="13dp" />
+
+                    <Button
+                        android:id="@+id/buy7"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Buy"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="186dp" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_buy_cart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                    <Button
+                        android:id="@+id/cart7"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cart"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:layout_editor_absoluteX="266dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_navigasi_halaman_pilihitem"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/home_button_in_pilihitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/home_button" />
+
+        <ImageButton
+            android:id="@+id/cart_button_in_pilihitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="185dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/cart_button" />
+
+        <ImageButton
+            android:id="@+id/account_button_in_pilihitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/account_button" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

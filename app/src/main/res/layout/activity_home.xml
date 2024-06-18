@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/welcome_halaman_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/caption_halaman_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Top up is easy, playing is more exciting!"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <FrameLayout
+        android:id="@+id/banner_halaman_home"
+        android:layout_width="0dp"
+        android:layout_height="158dp"
+        android:background="#00f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="363dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:srcCompat="@drawable/banner_valorant_50" />
+
+                <ImageView
+                    android:layout_width="363dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:srcCompat="@drawable/banner_valorant_50" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/garis_halaman_home"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/garis_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <FrameLayout
+        android:id="@+id/aplikasi_home"
+        android:layout_width="393dp"
+        android:layout_height="361dp"
+        android:background="#00f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.770">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <GridLayout
+                    android:id="@+id/aplikasi_halaman_home_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnCount="3"
+                    android:rowCount="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <ImageButton
+                        android:id="@+id/icon_hayday"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/hayday" />
+
+                    <ImageButton
+                        android:id="@+id/icon_apex"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/apex" />
+
+                    <ImageButton
+                        android:id="@+id/icon_valorant"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/valorant" />
+
+                    <ImageButton
+                        android:id="@+id/icon_freefire"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/freefire" />
+
+                    <ImageButton
+                        android:id="@+id/icon_callofdutymobile"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/callofdutymobile" />
+
+                    <ImageButton
+                        android:id="@+id/icon_genshinimpact"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/genshinimpact" />
+
+                    <ImageButton
+                        android:id="@+id/icon_clashofclans"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/clashofclans" />
+
+                    <ImageButton
+                        android:id="@+id/icon_mobilelegend"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@drawable/mobilelegend" />
+
+                    <ImageButton
+                        android:id="@+id/icon_pubg"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/pubg" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/aplikasi_halaman_home_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnCount="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:rowCount="3">
+
+                    <ImageButton
+                        android:id="@+id/icon_honkaistarrail"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/honkaistarrail" />
+
+                    <ImageButton
+                        android:id="@+id/icon_toweroffantasy"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/toweroffantasy" />
+
+                    <ImageButton
+                        android:id="@+id/icon_undawn"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/undawn" />
+
+                    <ImageButton
+                        android:id="@+id/icon_aov"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/aov" />
+
+                    <ImageButton
+                        android:id="@+id/icon_clashroyale"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/clashroyale" />
+
+                    <ImageButton
+                        android:id="@+id/icon_stumbleguys"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/stumbleguys" />
+
+                    <ImageButton
+                        android:id="@+id/icon_zepeto"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/zepeto" />
+
+                    <ImageButton
+                        android:id="@+id/icon_fcmobile"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/fcmobile" />
+
+                    <ImageButton
+                        android:id="@+id/icon_supersus"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/supersus" />
+                </GridLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_navigasi_halaman_home"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/home_button_in_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/home_button" />
+
+        <ImageButton
+            android:id="@+id/cart_button_in_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="185dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/cart_button" />
+
+        <ImageButton
+            android:id="@+id/account_button_in_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/account_button" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
